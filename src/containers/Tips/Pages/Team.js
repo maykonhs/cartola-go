@@ -72,7 +72,7 @@ export default class Team extends Component {
                   renderItem={({ item }) =>
                     <TouchableOpacity>
                       <ItemBox>
-                        <PhotoBox><Image style={{width: 64, height: 64}} source={{ uri: `http://10.0.3.2:3333/files/${item.photo}` }} /></PhotoBox>
+                        <PhotoBox><Image style={{width: 64, height: 64}} source={{ uri: `https://cartola-go-api.herokuapp.com/files/${item.photo}` }} /></PhotoBox>
                         <PlayerInfo>
                           <PlayerPosition>{item.position}</PlayerPosition>
                           <PlayerName>{item.name}</PlayerName>
