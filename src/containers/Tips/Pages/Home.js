@@ -11,6 +11,7 @@ import risk from '../../../assets/risk.png';
 import cheap from '../../../assets/cheap.png';
 import money from '../../../assets/money.png';
 import principal from '../../../assets/principal.png';
+import history from '../../../assets/history.png';
 
 import {
   Container,
@@ -34,6 +35,11 @@ export default class Home extends Component {
     navigation.navigate('Team', { teamId })
   }
 
+  handleNavigationHistory = () => {
+    const { navigation } = this.props;
+    navigation.navigate('History')
+  }
+
   render() {
     return (
       <Container>
@@ -46,7 +52,7 @@ export default class Home extends Component {
             <ImageBox><Image source={principal} /></ImageBox>
             <DescriptionBox>
               <TitleCard>Principal</TitleCard>
-              <DescriptionCard>Time focado em fazer a maior pontuação sem se preocupar com uma possível desvalorização do jogador</DescriptionCard>
+              <DescriptionCard>Time focado em fazer a maior pontuação possível, desconsiderando a valorização do jogador</DescriptionCard>
             </DescriptionBox>
           </Card>        
         </TouchableOpacity>
@@ -83,6 +89,16 @@ export default class Home extends Component {
             <DescriptionBox>
               <TitleCard>Bom e Barato</TitleCard>
               <DescriptionCard>Quer pontuar bem mas não tem grana ? Deixa com a gente...</DescriptionCard>
+            </DescriptionBox>
+          </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={this.handleNavigationHistory}>
+          <Card width={fullWidth}>
+            <ImageBox><Image source={history} /></ImageBox>
+            <DescriptionBox>
+              <TitleCard>Histórico</TitleCard>
+              <DescriptionCard>Veja a pontuação das rodadas anteriores</DescriptionCard>
             </DescriptionBox>
           </Card>
         </TouchableOpacity>

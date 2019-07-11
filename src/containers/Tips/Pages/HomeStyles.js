@@ -11,11 +11,11 @@ align-items: center;
 export const Title = styled.Text`
 color: #FFF;
 font-family: 'OpenSans-Bold';
-font-size: 25px;
+font-size: 20px;
 `
 
 export const Card = styled.View`
-height: 100px;
+height: 80px;
 background-color: #662B9C;
 border-radius: 5px
 padding: 5px;
@@ -44,7 +44,7 @@ align-items: flex-start;
 export const TitleCard = styled.Text`
 color: #FFF;
 font-family: 'OpenSans-Bold';
-font-size: 15px;
+font-size: 12px;
 `
 
 export const DescriptionCard = styled.Text`
